@@ -294,7 +294,9 @@ body, html {
 }
 .card:hover h2 small { color: #fff }
 .card:hover p { margin-top: 300px;
-            }
+          }
+/*Mayhem Card*/
+
 .card_circle1first {
     background: url('Responsivesite.png') no-repeat center bottom;
     background-color: black;
@@ -306,7 +308,97 @@ body, html {
     position: absolute;
     width: 450px;
 }
-.card_circle2 {
+.card_circle2first {
+    background: url('007.png') no-repeat center bottom;
+    background-color: black;
+    background-size: cover;
+    border-radius: 50%;
+    height: 400px;
+    margin-left: -75px;
+    margin-top: -270px;
+    position: absolute;
+    width: 450px;
+}
+.card_circle3first {
+    background: url('analyse.png') no-repeat center bottom;
+    background-size: cover;
+    border-radius: 50%;
+    height: 400px;
+    margin-left: -75px;
+    margin-top: -270px;
+    position: absolute;
+    width: 450px;
+}
+
+
+.card_circle1second {
+    background: url('gamepresentation.png') no-repeat center bottom;
+    background-color: black;
+    background-size: cover;
+    border-radius: 50%;
+    height: 400px;
+    margin-left: -75px;
+    margin-top: -270px;
+    position: absolute;
+    width: 450px;
+}
+.card_circle2second {
+    background: url('storyboard.png') no-repeat center bottom;
+    background-color: black;
+    background-size: cover;
+    border-radius: 50%;
+    height: 400px;
+    margin-left: -75px;
+    margin-top: -270px;
+    position: absolute;
+    width: 450px;
+}
+.card_circle3second {
+    background: url('breakingbad.png') no-repeat center bottom;
+    background-size: cover;
+    border-radius: 50%;
+    height: 400px;
+    margin-left: -75px;
+    margin-top: -270px;
+    position: absolute;
+    width: 450px;
+}
+
+.card_circle4second {
+    background: url('simpleanimation.png') no-repeat center bottom;
+    background-size: cover;
+    border-radius: 50%;
+    height: 400px;
+    margin-left: -75px;
+    margin-top: -270px;
+    position: absolute;
+    width: 450px;
+}
+
+.card_circle1third {
+    background: url('communicationplan.png') no-repeat center bottom;
+    background-color: black;
+    background-size: cover;
+    border-radius: 50%;
+    height: 400px;
+    margin-left: -75px;
+    margin-top: -270px;
+    position: absolute;
+    width: 450px;
+}
+.card_circle2third {
+    background: url('designplan.png') no-repeat center bottom;
+    background-color: black;
+    background-size: cover;
+    border-radius: 50%;
+    height: 400px;
+    margin-left: -75px;
+    margin-top: -270px;
+    position: absolute;
+    width: 450px;
+}
+
+.card_circle1four {
     background: url('Capture%20d%E2%80%99%C3%A9cran%202017-05-28%20%C3%A0%2014.48.22.png') no-repeat center bottom;
     background-color: black;
     background-size: cover;
@@ -317,8 +409,9 @@ body, html {
     position: absolute;
     width: 450px;
 }
-.card_circle3 {
-    background: url('Capture%20d%E2%80%99%C3%A9cran%202017-05-28%20%C3%A0%2014.54.07.png') no-repeat center bottom;
+.card_circle2four {
+    background: url('designplan.png') no-repeat center bottom;
+    background-color: black;
     background-size: cover;
     border-radius: 50%;
     height: 400px;
@@ -327,6 +420,7 @@ body, html {
     position: absolute;
     width: 450px;
 }
+
 #hcard {
     font-family: Montserrat;
     color:azure;
