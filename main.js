@@ -22,6 +22,7 @@ function showMenu () {
 window.onload= first();
 
 function first () {
+    chooseTheme();
     setTimeout(showSecond, 2000);
     setTimeout(switchImage, 3000);
     setTimeout(showArrow, 4000);
@@ -62,8 +63,9 @@ function switchImage () {
     else if (string =="UserInterface") {
         string = "";
     }
-    setTimeout(switchImage, 200);
+    setTimeout(switchImage, 280);
 };
+
 
 
 //Animation Front page
@@ -74,17 +76,67 @@ function showSecond () {
     secondPara.classList.add("fadeanimation");
 }
 
-//Hover show description
-
-let dportfolio = document.querySelector("#d_portfolio");
-dportfolio.onmouseover = function(){
-    console.log("fz");
-    dportfolio.style.display = "block";
-};
-
 //Show arrow
 
 function showArrow () {
     arrowDiv.style.display = "";
     arrowDiv.classList.add("fadeanimation");
 }
+
+// Select theme
+
+function chooseTheme () {
+
+let card1 = document.querySelector("#card_flex0");
+let card2 = document.querySelector ("#card_flex1");
+let card3 = document.querySelector('#card_flex2');
+let card4 = document.querySelector('#card_flex3');
+
+let input1 = document.querySelector("#input1");
+let input2 = document.querySelector("#input2");
+let input3 = document.querySelector("#input3");
+let input4 = document.querySelector("#input4");
+
+card2.style.display = "none";
+card3.style.display = "none";
+card4.style.display = "none";
+
+input1.addEventListener("click", showThemeOne);
+input2.addEventListener("click", showThemeTwo);
+input3.addEventListener("click", showThemeThree);
+input4.addEventListener("click", showThemeFour);
+
+function showThemeOne () {
+    console.log('fzfz');
+    card1.style.display = "";
+    card2.style.display = "none";
+    card3.style.display = "none";
+    card4.style.display = "none";
+}
+
+function showThemeTwo () {
+    console.log('fzfz');
+    card1.style.display = "none";
+    card2.style.display = "flex";
+    card3.style.display = "none";
+    card4.style.display = "none";
+}
+
+function showThemeThree () {
+    card1.style.display = "none";
+    card2.style.display = "none";
+    card3.style.display = "flex";
+    card4.style.display = "none";
+}
+
+function showThemeFour () {
+    card1.style.display = "none";
+    card2.style.display = "none";
+    card3.style.display = "none";
+    card4.style.display = "flex";
+}
+
+
+
+
+    }
