@@ -107,7 +107,6 @@ input3.addEventListener("click", showThemeThree);
 input4.addEventListener("click", showThemeFour);
 
 function showThemeOne () {
-    console.log('fzfz');
     card1.style.display = "";
     card2.style.display = "none";
     card3.style.display = "none";
@@ -115,7 +114,6 @@ function showThemeOne () {
 }
 
 function showThemeTwo () {
-    console.log('fzfz');
     card1.style.display = "none";
     card2.style.display = "flex";
     card3.style.display = "none";
@@ -137,6 +135,17 @@ function showThemeFour () {
 }
 
 
-
-
     }
+
+// Trigger Event on scrolling
+
+$(window).scroll(function() {
+   var hT = $('#artimage').offset().top,
+       hH = $('#artimage').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+    console.log((hT-wH) , wS);
+   if (wS > (hT+hH-wH)){
+       document.querySelector("#artimage").classList.add('artanimation');
+   }
+});

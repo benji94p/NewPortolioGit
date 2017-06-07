@@ -3,16 +3,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Benjamin Pelzman | Front-end Developer </title>
+    <link href="test3.png" rel="shortcut icon" type="image/png">
     <link rel="stylesheet" href="style.css">
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="jquery-3.2.1.js"></script>
-    <script src="jquery.interactive_bg.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="bootstrap-theme.css">
-    <link rel="stylesheet" href="font-awesome.css">
+    <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 </head>
@@ -23,19 +23,25 @@
         <button class="hamburger" style="display:none"></button>
         <button class="cross" style="display:none">&#735;</button>
 
-        <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 125.45 166.35" id="svg"><defs><style>.cls-1{font-size:110px;fill:#fdcd3b;font-family:SignPainter-HouseScript, SignPainter;}</style></defs><title>Fichier 2</title><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><text class="cls-1" transform="translate(62.6 105.71)">B</text><text class="cls-1" transform="matrix(-1, 0, 0, 1, 62.89, 105.4)">P</text></g></g></svg>
+        <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 125.45 166.35" id="svg"><defs><style>.cls-1{font-size:110px;fill:#fdcd3b;font-family:SignPainter-HouseScript, SignPainter;}</style></defs><title>Fichier 2</title><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><text class="cls-1" transform="translate(62.6 105.71)">B</text><text class="cls-1" transform="matrix(-1, 0, 0, 1, 62.89, 105.4)">P</text></g></g>
+        </svg>
+
         <div class="header1">
             <h1 id="firstp" class="firstanimation" >Hi I'm Ben! A front-end developer.</h1>
             <h1 id="secondp">I know</h1>
             <p id="switcher">Psd to HTML</p>
         </div>
+
         <div id="arrowcontainer">
         <p id="scrollp">Scroll down to see more</p>
-        <img id="arrow" src="down-arrow%20(1).png">
+        <img id="arrow" class="animated infinite bounceOutDown" src="down-arrow%20(1).png">
         </div>
+
     </div>
     <div class="aboutme">
-      <h1 class="text-center header bleh">About me</h1>
+
+      <h1 class="text-center header bleh">About me.</h1>
+
         <div id="flexcontainer">
         <img id="artimage" class="img-rounded img-responsive" src="artprofil1.jpg">
 
@@ -77,16 +83,16 @@
         </div>
 
 
-
     </div>
+
     <div id="portfolio">
-        <h1 class="text-center header bleh">My Projects</h1>
+        <h1 class="text-center header bleh" id="targeth">My Projects.</h1>
             <form id="choosetheme">
             <input type="radio" id="input1" name="rr" checked />
-            <label for="input1"><span></span>Theme 1(Basic WebDesign)</label>
+            <label for="input1"><span></span>Theme 1(WebDesign)</label>
             <p>
             <input type="radio" id="input2" name="rr" />
-            <label for="input2"><span></span>Theme 2(Basic animation)</label>
+            <label for="input2"><span></span>Theme 2(Animation)</label>
             <p>
             <input type="radio" id="input3" name="rr" />
             <label for="input3"><span></span>Theme 3(Business)</label>
@@ -100,7 +106,7 @@
                 <div class="card transition">
                   <h2 id="hcard" class="transition">Responsive site</h2>
                   <p id="transition" >This was my firt responsive website, using HTML,CSS</p>
-                  <div class="cta-container transition"><a href="#" class="cta">View online</a></div>
+                  <div class="cta-container transition"><a href="http://digitartpzm.dk/MyFirstSite/index..html" class="cta" target="_blank">View online</a></div>
                   <div class="card_circle1first transition"></div>
                 </div>
             </div>
@@ -117,7 +123,7 @@
                 <div class="card transition">
                   <h2 id="hcard" class="transition">Website Anlayse</h2>
                   <p id="transition" >I analysed an exisiting website in a group project</p>
-                  <div class="cta-container transition"><a href="#" class="cta">View online</a></div>
+                  <div class="cta-container transition"><a href="https://docs.google.com/presentation/d/18k5zf1256eMb1B0fggMzX-41KtDM8Cca5LZYUKKmYJk/edit" class="cta" target="_blank">View online</a></div>
                   <div class="card_circle3first transition"></div>
                 </div>
                 </div>
@@ -125,90 +131,91 @@
 
         </div>
 
-        <div id="card_flex1" class="genericflex">
-            <div class="divider">
-                <div class="card transition">
-                  <h2 id="hcard" class="transition">Family Western Game</h2>
-                  <p id="transition" >I coded a game of Family Guy the cartoon in Html, Css and Javascript</p>
-                  <div class="cta-container transition"><a href="#" class="cta">View online</a></div>
-                  <div class="card_circle1second transition"></div>
-                </div>
-            </div>
-            <div class="divider">
-                <div class="card transition">
-                  <h2 id="hcard" class="transition">Storyboard character</h2>
-                  <p id="transition" >In a school group project context, created the storyboard of our animation project</p>
-                  <div class="cta-container transition"><a href="#" class="cta">View online</a></div>
-                  <div class="card_circle2second transition"></div>
-                </div>
-                </div>
-            <div class="divider">
-                <div class="card transition">
-                  <h2 id="hcard" class="transition">Breaking Bad</h2>
-                  <p id="transition" >I created an animation of a breaking bad scene.</p>
-                  <div class="cta-container transition"><a href="#" class="cta">View online</a></div>
-                  <div class="card_circle3second transition"></div>
-                </div>
-            </div>
+                <div id="card_flex1" class="genericflex">
+                    <div class="divider">
+                        <div class="card transition">
+                          <h2 id="hcard" class="transition">Family Western Game</h2>
+                          <p id="transition" >I coded a game of Family Guy the cartoon in Html, Css and Javascript</p>
+                          <div class="cta-container transition"><a href="http://robkea.dk/family%20guy%20game/index.html" class="cta" target="_blank">View online</a></div>
+                          <div class="card_circle1second transition"></div>
+                        </div>
+                    </div>
+                    <div class="divider">
+                        <div class="card transition">
+                          <h2 id="hcard" class="transition">Storyboard character</h2>
+                          <p id="transition" >In a school group project context, created the storyboard of our animation project</p>
+                          <div class="cta-container transition"><a href="https://fronter.com/kea/links/files.phtml/59381b3b09018.936347401$559711295$/1st+Semester/02.+Theme+2_prcent_3A+Basic+Animation/Submissions/2.4d+Story+board+_prcent_28PDF_prcent_29/Storyboard_FamilyGuy.pdf" class="cta" target="_blank">View online</a></div>
+                          <div class="card_circle2second transition"></div>
+                        </div>
+                        </div>
+                    <div class="divider">
+                        <div class="card transition">
+                          <h2 id="hcard" class="transition">Breaking Bad</h2>
+                          <p id="transition" >I created an animation of a breaking bad scene.</p>
+                          <div class="cta-container transition"><a href="http://digitartpzm.dk/animation/index.html" class="cta" target="_blank">View online</a></div>
+                          <div class="card_circle3second transition"></div>
+                        </div>
+                    </div>
 
-            <div class="divider">
-                <div class="card transition">
-                  <h2 id="hcard" class="transition">Simple Animation</h2>
-                  <p id="transition" >I animated a character for training purpose of Js.</p>
-                  <div class="cta-container transition"><a href="#" class="cta">View online</a></div>
-                  <div class="card_circle4second transition"></div>
-                </div>
-            </div>
-
-
-        </div>
-
-        <div id="card_flex2" class="genericflex">
-            <div class="divider">
-                <div class="card transition">
-                  <h2 id="hcard" class="transition">Communication Plan</h2>
-                  <p id="transition" >This is the Communication Plan of our entrepreneurship project</p>
-                  <div class="cta-container transition"><a href="#" class="cta">View online</a></div>
-                  <div class="card_circle1third transition"></div>
-                </div>
-            </div>
-            <div class="divider">
-                <div class="card transition">
-                  <h2 id="hcard" class="transition">Design Plan</h2>
-                  <p id="transition" >This is the design plan of our entrepreneurship project</p>
-                  <div class="cta-container transition"><a href="#" class="cta">View online</a></div>
-                  <div class="card_circle2third transition"></div>
-                </div>
-                </div>
+                    <div class="divider">
+                        <div class="card transition">
+                          <h2 id="hcard" class="transition">Simple Animation</h2>
+                          <p id="transition" >I animated a character for training purpose of Js.</p>
+                          <div class="cta-container transition"><a href="http://digitartpzm.dk/handinwednesday/index.html" class="cta" target="_blank">View online</a></div>
+                          <div class="card_circle4second transition"></div>
+                        </div>
+                    </div>
 
 
-
-        </div>
-
-        <div id="card_flex3" class="genericflex">
-            <div class="divider">
-                <div class="card transition">
-                  <h2 id="hcard" class="transition">Uprooted video</h2>
-                  <p id="transition" >We created an interview video, the main subject was being uprooted.</p>
-                  <div class="cta-container transition"><a href="#" class="cta">View online</a></div>
-                  <div class="card_circle1four transition"></div>
-                </div>
-            </div>
-            <div class="divider">
-                <div class="card transition">
-                  <h2 id="hcard" class="transition">Video without talking</h2>
-                  <p id="transition" >We created a video without sounds, under 3 min, with a proper dramatic curve.</p>
-                  <div class="cta-container transition"><a href="#" class="cta">View online</a></div>
-                  <div class="card_circle2four transition"></div>
-                </div>
                 </div>
 
+                <div id="card_flex2" class="genericflex">
+                    <div class="divider">
+                        <div class="card transition">
+                          <h2 id="hcard" class="transition">Communication Plan</h2>
+                          <p id="transition" >This is the Communication Plan of our entrepreneurship project</p>
+                          <div class="cta-container transition"><a href="#" class="cta">View online</a></div>
+                          <div class="card_circle1third transition"></div>
+                        </div>
+                    </div>
+                    <div class="divider">
+                        <div class="card transition">
+                          <h2 id="hcard" class="transition">Design Plan</h2>
+                          <p id="transition" >This is the design plan of our entrepreneurship project</p>
+                          <div class="cta-container transition"><a href="#" class="cta">View online</a></div>
+                          <div class="card_circle2third transition"></div>
+                        </div>
+                        </div>
 
-        </div>
+
+
+                </div>
+
+                <div id="card_flex3" class="genericflex">
+                    <div class="divider">
+                        <div class="card transition">
+                          <h2 id="hcard" class="transition">Uprooted video</h2>
+                          <p id="transition" >We created an interview video, the main subject was being uprooted.</p>
+                          <div class="cta-container transition"><a href="#" class="cta">View online</a></div>
+                          <div class="card_circle1four transition"></div>
+                        </div>
+                    </div>
+                    <div class="divider">
+                        <div class="card transition">
+                          <h2 id="hcard" class="transition">Video without talking</h2>
+                          <p id="transition" >We created a video without sounds, under 3 min, with a proper dramatic curve.</p>
+                          <div class="cta-container transition"><a href="#" class="cta">View online</a></div>
+                          <div class="card_circle2four transition"></div>
+                        </div>
+                        </div>
+
+
+                </div>
 
     </div>
+
     <div id="contactpage">
-            <h1 class="text-center header bleh">Get in touch</h1>
+            <h1 class="text-center header bleh">Get in touch.</h1>
             <h3 class="contactaction">Download my C.V</h4>
             <h3 class="contactaction">Send me an email</h4>
             <h3 class="contactaction">Call me: +45 50 17 91 55</h4>

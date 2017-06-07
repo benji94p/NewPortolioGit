@@ -184,6 +184,7 @@ body, html {
     #artimage {
         max-height: 500px;
         width: auto;
+
     }
     #aboutp {
     font-size: 19px;
@@ -193,6 +194,29 @@ body, html {
     padding-top:  30px;
 }
 }
+
+.artanimation {
+    animation: artanimation 1.5s forwards ease-out;
+}
+
+@keyframes artanimation {
+    0% {
+        left: -40%;
+        opacity: 0.2;
+    }
+    100% {
+        left: 7%;
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #artimage {
+        position: relative;
+        left: -40%;
+    }
+
+}
 @media screen and (max-width: 1220px) and (min-width: 900px) {
     #flexcontainer {
         flex-direction: row;
@@ -201,6 +225,7 @@ body, html {
         max-height: 500px;
         width: auto;
     }
+
    #aboutp {
     font-size: 19px;
     margin-top: 90px;
@@ -229,7 +254,7 @@ body, html {
 /*PORTFOLIO*/
 
 #portfolio {
-    background-image: url(explosion2.png);  /* Full height */
+    background-image:url(backgroundgradient.png);  /* Full height */
     height: auto;
     width: 100%;
 
@@ -298,7 +323,7 @@ body, html {
 /*Mayhem Card*/
 
 .card_circle1first {
-    background: url('Responsivesite.png') no-repeat center bottom;
+    background: url('Death_to_Stock_Equinox_4.jpg') no-repeat center bottom;
     background-color: black;
     background-size: cover;
     border-radius: 50%;
@@ -309,7 +334,7 @@ body, html {
     width: 450px;
 }
 .card_circle2first {
-    background: url('007.png') no-repeat center bottom;
+    background: url('Death_to_Stock_Equinox_6.jpg') no-repeat center bottom;
     background-color: black;
     background-size: cover;
     border-radius: 50%;
@@ -320,7 +345,7 @@ body, html {
     width: 450px;
 }
 .card_circle3first {
-    background: url('analyse.png') no-repeat center bottom;
+    background: url('Death_to_Stock_Tactile_4.jpg') no-repeat center bottom;
     background-size: cover;
     border-radius: 50%;
     height: 400px;
