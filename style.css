@@ -176,6 +176,7 @@ body, html {
 }
 #aboutp {
     font-family: Montserrat;
+    position: relative;
 }
 @media (min-width: 1220px) {
     #flexcontainer {
@@ -192,9 +193,25 @@ body, html {
     width: 60%;
     margin-left: 200px;
     padding-top:  30px;
+    position: relative;
+    right: -90%;
 }
 }
 
+.panimation {
+    animation: panimation 1s forwards ease-out;
+}
+
+@keyframes panimation {
+    0% {
+        right: -90%;
+        opacity: 0.2;
+    }
+    100% {
+        right: 0%;
+        opacity: 1;
+    }
+}
 .artanimation {
     animation: artanimation 1.5s forwards ease-out;
 }
@@ -248,7 +265,58 @@ body, html {
 }
 }
 #secondflex {
-    display: none;
+    display: bloc;
+    font-family: Montserrat;
+}
+
+/*SKILLS*/
+
+.skills {
+    background-color:whitesmoke;
+    font-family: Montserrat;
+}
+#skillsp {
+    text-align: center;
+    font-size: 17px;
+}
+.icon {
+    height: 120px;
+}
+
+#flexskills {
+    width: 100%;
+    display: flex;
+    margin-top: 60px;
+    padding-bottom: 100px;
+}
+.containerbox {
+    width: 15%;
+    text-align: center;
+}
+.headerbox {
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+
+    #flexskills {
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+
+}
+    .containerbox {
+        width: 100%;
+        margin-bottom: 45px;
+    }
+    #idea {
+        margin-top: 30px;
+    }
+}
+@media (min-width: 800px) {
+    #flexskills {
+    justify-content: space-around;
+}
 
 }
 /*PORTFOLIO*/
@@ -390,7 +458,7 @@ body, html {
 }
 
 .card_circle4second {
-    background: url('simpleanimation.png') no-repeat center bottom;
+    background: url('musicmachinebg.jpg') no-repeat center bottom;
     background-size: cover;
     border-radius: 50%;
     height: 400px;
@@ -422,7 +490,17 @@ body, html {
     position: absolute;
     width: 450px;
 }
-
+.card_circle3third {
+    background: url('colorsmoke.jpg') no-repeat center bottom;
+    background-color: black;
+    background-size: cover;
+    border-radius: 50%;
+    height: 400px;
+    margin-left: -75px;
+    margin-top: -270px;
+    position: absolute;
+    width: 450px;
+}
 .card_circle1four {
     background: url('Capture%20d%E2%80%99%C3%A9cran%202017-05-28%20%C3%A0%2014.48.22.png') no-repeat center bottom;
     background-color: black;
@@ -435,7 +513,7 @@ body, html {
     width: 450px;
 }
 .card_circle2four {
-    background: url('designplan.png') no-repeat center bottom;
+    background: url('jack.png') no-repeat center bottom;
     background-color: black;
     background-size: cover;
     border-radius: 50%;
@@ -565,6 +643,9 @@ input[type="radio"]:checked + label span {
     flex-direction: row;
     justify-content: space-around;
 }
+#downloadcv {
+
+}
 /*CONTACT PAGE */
 
 #contactpage {
@@ -572,8 +653,8 @@ input[type="radio"]:checked + label span {
     background-color: whitesmoke;
     margin-top: 0px;
     /* Full height */
-    height: 80%;
     width: 100%;
+    padding-bottom: 45px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -584,6 +665,41 @@ input[type="radio"]:checked + label span {
 }
 .contactaction {
     text-align: center;
+}
+
+#contactcontent {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+}
+
+button {
+     border: solid #E0BE36 2px;
+    background: transparent;
+    border-radius: 20px;
+    font-weight: bold!important;
+
+}
+#contactpage a {
+    color: black;
+}
+.headcontact {
+    font-size:22px;
+}
+#emailbutton {
+    margin-bottom: 20px;
+
+}
+
+#downloadcv {
+    margin-bottom: 20px;
+}
+
+#contactp{
+    margin-top: 15px;
+}
+#emailbutton:hover{
+    text-decoration: none;
 }
 
 /*FOOTER */
@@ -607,4 +723,30 @@ input[type="radio"]:checked + label span {
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
+}
+.footer {
+  background: #061D25;
+  padding: 10px 0;
+    padding-top: 40px;
+}
+.footer a {
+  color: #70726F;
+  font-size: 20px;
+  padding: 10px;
+  border-right: 1px solid #E0BE36;
+  transition: all .5s ease;
+}
+.footer a:first-child {
+  border-left: 1px solid #E0BE36;
+}
+.footer a:hover {
+  color: white;
+}
+
+#footerline {
+
+    font-style: italic;
+    color: darkgrey;
+    text-align: center;
+
 }

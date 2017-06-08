@@ -147,5 +147,7 @@ $(window).scroll(function() {
     console.log((hT-wH) , wS);
    if (wS > (hT+hH-wH)){
        document.querySelector("#artimage").classList.add('artanimation');
+       document.querySelector("#aboutp").classList.add('panimation');
    }
 });
+
